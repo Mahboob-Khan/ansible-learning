@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Install Apache.
+      yum:
+        name: 
+          - httpd
+          - httpd-devel
+        state: present 
+      

@@ -1,0 +1,9 @@
+---
+- hosts: all
+
+  tasks: 
+    - name: Check the status of Apache Server
+      service: httpd
+        state: status
+        enabled: yes
+      become: yes
